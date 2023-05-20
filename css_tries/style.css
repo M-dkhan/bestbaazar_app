@@ -1,0 +1,226 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+
+}
+
+.nav-logo {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* border: 1px solid red;
+    padding: 20px;
+    border-radius: 7px;
+    position: relative; */
+}
+
+.nav-links a {
+    color: rgb(243, 241, 241);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 7px;
+    flex: 1;
+    text-align: center;
+    min-width: 50px;
+    border: none;
+    outline: none;
+}
+
+.nav-links a.active {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.nav-links a:hover {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.nav-links a i {
+    margin-bottom: 5px;
+}
+
+.nav-button {
+    padding: 9px 18px;
+    background-color: rgb(245, 195, 195);
+    color: rgb(243, 241, 241);
+    border: none;
+    border-radius: 7px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    /* border: 3px solid blue; */
+
+}
+
+/* --------------------------------- About Me ------------------------------- */
+.color-blue{
+    color: rgb(34, 193, 195);
+    transition: color 0.3s;
+}
+.color-yellow{
+   color:rgba(253, 187, 45, 1);
+   transition: color 0.3s;
+}
+
+.about-section {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px auto 0;
+    background-color: #333;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 20px;
+    color: rgb(243, 241, 241);
+}
+
+.about-section .about .card img {
+    margin-top: -80px;
+    max-width: 350px;
+    /* Limit the image width to its container */
+    max-height: 300px;
+    border-radius: 20px;
+    /* Negative top margin for the image */
+}
+
+.about-section .about .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section .about .card h1 {
+    margin-bottom: 0px;
+    /* Adjust the margin-bottom as needed */
+}
+
+.about-section .about .card p {
+    padding: 4px 8px;
+    background-color: rgba(105, 105, 105, 0.322);
+    border-radius: 7px;
+    outline: none;
+    text-decoration: none;
+    max-width: 200px;
+    /* Adjust the max-width as needed */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-section .about .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-section .about .social-links a {
+    border: 1px solid #000;
+    /* Border color */
+    padding: 6px 6px;
+    border-radius: 7px;
+    min-width: 25px;
+    background-color: rgba(105, 105, 105, 0.322);
+    border: none;
+    outline: none;
+}
+
+.about-section .about .social-links a:hover {
+    color: white;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.about-section .about .contact-info{
+    border: 1px solid #000;
+    padding: 6px 6px;
+    border-radius: 20px;
+    min-width: 50px;
+    background-color: rgba(105, 105, 105, 0.322);
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+.about-section .about .contact-info .contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.about-section .about .contact-info .contact-item a{
+    border: 1px solid #000;
+    /* Border color */
+    padding: 6px 6px;
+    border-radius: 7px;
+    min-width: 25px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: none;
+    outline: none;
+}
+
+.about-section .about .contact-info .contact-item a:hover{
+    color: white;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+.about-section .about .contact-info .contact-item .contact-text p{
+    text-align: start;
+    margin: 0px;    
+}
+.about-section .about .contact-info .contact-item .contact-text .p-text{
+    font-size: smaller;
+    color: rgb(177, 175, 175);
+    font-weight: bolder;
+    letter-spacing:0.5px;
+}
+.about-section .about .contact-info .contact-item .contact-text .p-item{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    letter-spacing:0.5px;
+
+}
+.thin-line {
+    border: none;
+    border-top: 0.1px solid rgb(255, 255, 255);
+    max-width: 300px;
+}
+
+.about-section .about div .cv-button{
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    /* Border color */
+    padding: 6px 6px;
+    border-radius: 7px;
+    min-width: 25px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: none;
+    outline: none;
+}
+  
+/* --------------------------------- About Me Ends ------------------------------- */
